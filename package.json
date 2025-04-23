@@ -1,0 +1,35 @@
+{
+  "name": "vite-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.2"
+  }
+}
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+  import { getAnalytics } from "firebase/analytics";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBZtq7W4Zq02__5ZIIjZ6kxrScUZ1Qxd9U",
+    authDomain: "aak-data-services.firebaseapp.com",
+    projectId: "aak-data-services",
+    storageBucket: "aak-data-services.firebasestorage.app",
+    messagingSenderId: "66256100330",
+    appId: "1:66256100330:web:5fc678d706e5014bd13093",
+    measurementId: "G-CY1MZNTTNP"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
